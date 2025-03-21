@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center py-20 px-4 text-white text-center overflow-hidden bg-[url('/images/grid-bg.png')] bg-stretch h-screen">
+    <section className="relative flex flex-col items-center justify-center py-20 px-4 text-white text-center overflow-hidden bg-[url('/images/grid-bg.png')] bg-stretch h-s">
       
       {/* Rotating Star Image */}
       <motion.img 

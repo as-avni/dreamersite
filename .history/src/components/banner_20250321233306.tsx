@@ -12,6 +12,7 @@ export default function MovingBanner() {
   return (
     <div className="bg-[#1B24FF] text-white py-3 overflow-hidden relative">
       <div className="flex whitespace-nowrap mx-auto w-max animate-scrollBanner">
+        
         {[...bannerItems,...bannerItems,...bannerItems].map((item, index) => (
           <span key={index} className="mx-4 md:text-3xl font-medium">
             {item}
