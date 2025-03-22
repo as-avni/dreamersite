@@ -41,7 +41,7 @@ export default function Hero() {
     },
   ];
   return (
-    <section className="relative flex flex-col items-center justify-center py-20 px-4 text-white text-center overflow-hidden bg-[url('/images/11.png')] bg-stretch h-screen">
+    <section className="relative flex flex-col items-center justify-center py-20 px-4 text-white text-center overflow-hidden bg-[url('/images/g.png')] bg-stretch h-screen">
       
       {/* Rotating Star Image */}
       <motion.img 
