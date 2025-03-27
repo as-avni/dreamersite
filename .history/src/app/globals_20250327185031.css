@@ -9,27 +9,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Completely hide the default cursor */
+/* Hide the default cursor completely */
 html, body, *, *::before, *::after {
-  cursor: none;
-  user-select: none;
-
+  cursor: none !important;
 }
-
-/* Hide scrollbars for all elements */
-::-webkit-scrollbar {
-  display: none;
-}
-
 
 /* Custom cursor styling */
 .custom-cursor {
   position: fixed;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+/* Custom cursor styling */
+.custom-cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 
 .blinking-cursor {

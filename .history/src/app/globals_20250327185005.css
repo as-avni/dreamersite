@@ -9,28 +9,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Completely hide the default cursor */
-html, body, *, *::before, *::after {
-  cursor: none;
-  user-select: none;
 
-}
-
-/* Hide scrollbars for all elements */
-::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* Custom cursor styling */
-.custom-cursor {
-  position: fixed;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .blinking-cursor {
   display: inline-block;
@@ -51,6 +30,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  pointer-events: none; /* Prevents interference with clicks */
+  z-index: 9999;
 }
 
 

@@ -12,15 +12,9 @@
 /* Completely hide the default cursor */
 html, body, *, *::before, *::after {
   cursor: none;
-  user-select: none;
+  
 
 }
-
-/* Hide scrollbars for all elements */
-::-webkit-scrollbar {
-  display: none;
-}
-
 
 /* Custom cursor styling */
 .custom-cursor {

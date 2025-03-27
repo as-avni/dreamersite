@@ -37,10 +37,6 @@ return (
     style={{
         top: `${position.y}px`,
         left: `${position.x}px`,
-        backgroundImage: "url('/cursor.png')", // Update with the actual path
-        backgroundSize: "cover",
-        width: "40px", // Adjust size as needed
-        height: "40px",
     }}
     />
 );

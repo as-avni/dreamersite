@@ -21,6 +21,11 @@ html, body, *, *::before, *::after {
   display: none;
 }
 
+html, body {
+  overflow: hidden; /* Prevent scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
 
 /* Custom cursor styling */
 .custom-cursor {

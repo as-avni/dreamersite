@@ -16,12 +16,6 @@ html, body, *, *::before, *::after {
 
 }
 
-/* Hide scrollbars for all elements */
-::-webkit-scrollbar {
-  display: none;
-}
-
-
 /* Custom cursor styling */
 .custom-cursor {
   position: fixed;
