@@ -41,24 +41,37 @@ export default function Hero() {
     },
   ];
   return (
-    <section className="relative flex flex-col items-center justify-center py-20 px-4 text-white text-center overflow-hidden bg-[url('https://res.cloudinary.com/dhi3iupue/image/upload/v1743189393/hero-bg_ms8k45.png')] bg-stretch h-screen">
+    <section className="relative flex flex-col items-center justify-center py-20 px-4 text-white text-center overflow-hidden bg-[url('/images/hero-bg.png')] bg-stretch h-screen">
       
       {/* Rotating Star Image */}
       <div>
-      <motion.img 
-        src="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189394/Star_yvalq1.png" 
+      <motion.div 
+      className="absolute w-28 h-28 md:w-28 md:h-28 top-[6%] md:top-[25%] lg:left-[12%] left-[16%]"
+      animate={{ rotate: 360 }}
+      transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+    >
+      <Image
+        src="https://drive.google.com/uc?export=view&id=12DdzjjSDEKwS3Ol5oAGnRGuQfMVFAVOq"
+        alt="Star"
+        width={112} // w-28 in Tailwind is 112px
+        height={112} // h-28 in Tailwind is 112px
+        unoptimized // Important if using "export"
+      />
+    </motion.div>
+      {/* <motion.img 
+        src="/images/Star.png" 
         alt="Star" 
         className="absolute w-28 md:w-28 h-28 md:h-28 top-[6%] md:top-[25%] lg:left-[12%] left-[16%]"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
-        />
+        /> */}
         </div>
         
 
       {/* Static Image in a Div */}
       <motion.div
         className="absolute md:w-80 md:h-80 w-52 h-52 bg-cover bg-center bottom-[6%] md:top-[20%] lg:right-[1%] right-[1%] md:right-[10%]"
-        style={{ backgroundImage: "url('https://res.cloudinary.com/dhi3iupue/image/upload/v1743189393/image_zgurf4.png')" }}
+        style={{ backgroundImage: "url('/images/image.png')" }}
         initial={{ rotateY: 0 }}
         animate={{ rotateY: 360 }}
         transition={{ duration: 4, repeat: Infinity, ease: "linear" }}

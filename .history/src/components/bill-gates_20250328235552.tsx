@@ -103,7 +103,7 @@ export default function BillGatesSection() {
         >
           <div className="relative w-[200px] h-[280px] bg-black rounded overflow-hidden">
             <Image
-              src="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189393/bill_n1dl4e.jpg"
+              src="/images/bill.jpg"
               width={200}
               height={200}
               alt="Bill Gates"
@@ -138,7 +138,7 @@ export default function BillGatesSection() {
         <div className="flex items-center justify-center">
           <h2 className="text-2xl md:text-7xl font-black tracking-tight font-serif text-black">VERY SERI</h2>
           <Image
-            src="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189394/seriously_zd6yzw.png"
+            src="/images/seriously.png"
             width={80}
             height={80}
             alt="Serious Photo"

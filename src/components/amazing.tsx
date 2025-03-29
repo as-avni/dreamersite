@@ -85,8 +85,8 @@ export default function AmazingSection() {
             whileTap={{ scale: 0.95 }}
           >
             If you are
-            <Image src="/images/small-star.png" alt="star" width={20} height={20} className="absolute top-[-1px] right-[-1px]" />
-            <Image src="/images/small-star.png" alt="star" width={20} height={20} className="absolute bottom-[-1px] left-[-1px]" />
+            <Image src="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189393/small-star_vdik1o.png" alt="star" width={20} height={20} className="absolute top-[-1px] right-[-1px]" />
+            <Image src="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189393/small-star_vdik1o.png" alt="star" width={20} height={20} className="absolute bottom-[-1px] left-[-1px]" />
           </motion.button>
 
           <motion.div
@@ -96,10 +96,10 @@ export default function AmazingSection() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <CategoryCard image="./images/0.png" title="AN ENTREPRENEUR" />
-            <CategoryCard image="./images/1.png" title="A COLLEGE STUDENT" />
-            <CategoryCard image="./images/2.png" title="A LEADER" />
-            <CategoryCard image="./images/3.png" title="A DREAMER" />
+            <CategoryCard image="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189392/0_rrau9d.png" title="AN ENTREPRENEUR" />
+            <CategoryCard image="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189392/1_lb9ga2.png" title="A COLLEGE STUDENT" />
+            <CategoryCard image="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189392/2_roaajw.png" title="A LEADER" />
+            <CategoryCard image="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189392/3_s112at.png" title="A DREAMER" />
 
             <motion.div className="flex flex-col items-center space-y-2" variants={itemVariants}>
             <div className="bg-[#FFCA28] py-2 px-4 text-center w-64 h-full text-black font-medium hover:bg-[#FFB300] transition-colors cursor-pointer">
@@ -144,7 +144,7 @@ function CategoryCard({ image, title }: { image: string; title: string }) {
   return (
     <motion.div className="flex flex-col items-center" variants={itemVariants}>
       <div className="w-64 h-48 flex items-center justify-center shadow-md border-2 border-white">
-        <Image src={`/${image}`} alt={title} width={120} height={120} className="object-cover" />
+      <Image src={image} alt={title} width={120} height={120} className="object-cover" />
       </div>
       <div className="bg-[#FFCA28] py-2 px-4 text-center w-64 text-black font-medium">
         <p className="font-bold text-lg">{title}</p>

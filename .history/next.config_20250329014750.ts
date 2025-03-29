@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: "export",
+  outp
 };
 
 export default nextConfig;

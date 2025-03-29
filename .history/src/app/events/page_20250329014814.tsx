@@ -1,4 +1,4 @@
-import CustomCursor from "@/hooks/CustomCursor"
+// import CustomCursor from "@/hooks/CustomCursor"
 import EventsPage from "./events-page"
 import Hero from "@/components/hero"
 
