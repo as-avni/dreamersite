@@ -18,14 +18,14 @@ const events = [
     id: 2,
     image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435833/1_ony2s3.png",
     title: "Know your potrntial",
-    presenter: "Dr. Adarsh Sharma",
+    presenter: "Sarah Johnson",
     tags: ["Design", "Innovation"],
 },
 {
     id: 3,
     image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435832/5_ulrc0z.png",
     title: "Master your skills",
-    presenter: "Dr. Adarsh Sharma",
+    presenter: "Michael Chen",
     tags: ["Business", "Finance"],
 },
 {
@@ -39,14 +39,14 @@ const events = [
     id: 5,
     image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435832/4_hc29vf.png",
     title: "How to pitch for funds",
-    presenter: "Dr. Adarsh Sharma",
+    presenter: "Sarah Johnson",
     tags: ["Design", "Innovation"],
 },
 {
     id: 6,
     image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435832/3_auca2q.png",
     title: "What is depriciation?",
-    presenter: "Dr. Adarsh Sharma",
+    presenter: "Michael Chen",
     tags: ["Business", "Finance"],
 },
 ]
@@ -119,11 +119,7 @@ return (
         </div>
         </div>
 
-        <button className="bg-[#f2d638] text-black rounded-full font-bold flex items-center mx-auto hover:bg-yellow-500 transition-colors"
-            onClick={() => {
-            window.open('https://tally.so/r/mDMgyq', '_blank');
-          }}
-        >
+        <button className="bg-[#f2d638] text-black rounded-full font-bold flex items-center mx-auto hover:bg-yellow-500 transition-colors">
         <div className="rounded-full">
             <ChevronRightCircle className="h-8 w-8" />
         </div>

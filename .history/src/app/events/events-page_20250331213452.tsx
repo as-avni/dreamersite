@@ -120,7 +120,7 @@ return (
         </div>
 
         <button className="bg-[#f2d638] text-black rounded-full font-bold flex items-center mx-auto hover:bg-yellow-500 transition-colors"
-            onClick={() => {
+        onClick={() => {
             window.open('https://tally.so/r/mDMgyq', '_blank');
           }}
         >

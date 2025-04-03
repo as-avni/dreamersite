@@ -95,9 +95,8 @@ export default function Hero() {
         >
             <button className="bg-white flex flex-row space-x-3 text-black rounded-full px-6 py-4 text-sm md:text-xl font-medium transition-all hover:bg-gray-50"
             onClick={() => {
-              window.location.href = "/#form";
-            }}
-            >
+              document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
             <TypewriterEffect words={word} />
           <span className="text-black bg-[#FFD54F] px-3 rounded-full font-bold">2 mins</span>
             </button>

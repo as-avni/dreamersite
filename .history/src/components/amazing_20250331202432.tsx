@@ -103,15 +103,13 @@ export default function AmazingSection() {
             <CategoryCard image="https://res.cloudinary.com/dhi3iupue/image/upload/v1743189392/3_s112at.png" title="A DREAMER" />
 
             <motion.div className="flex flex-col items-center space-y-2" variants={itemVariants}>
-              
+              <Link href target="_blank">
               <div className="bg-[#FFCA28] py-2 px-4 text-center w-64 h-full text-black font-medium hover:bg-[#FFB300] transition-colors cursor-pointer">
-              <Link href="https://tally.so/r/mDMgyq" target="_blank">
                 <h1 className="font-bold text-xl text-left">Join us to create great opportunities.</h1>
                 <p className="text-lg text-left">Let’s make the world a better place.</p>
                 <p className="font-bold text-2xl text-left">APPLY TO JOIN →</p>
-                </Link>
               </div>
-              
+              </Link>
             </motion.div>
           </motion.div>
           <motion.div

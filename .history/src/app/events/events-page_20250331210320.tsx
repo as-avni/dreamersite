@@ -9,44 +9,23 @@ import Image from "next/image"
 const events = [
 {
     id: 1,
-    image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435867/6_h11bze.png",
+    image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743189393/event_zwsp6i.png",
     title: "Speak with impact",
     presenter: "Dr. Adarsh Sharma",
     tags: ["Motivational", "Public Speaking"],
 },
 {
     id: 2,
-    image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435833/1_ony2s3.png",
-    title: "Know your potrntial",
-    presenter: "Dr. Adarsh Sharma",
+    image: "/images/",
+    title: "Design Thinking Workshop",
+    presenter: "Sarah Johnson",
     tags: ["Design", "Innovation"],
 },
 {
     id: 3,
-    image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435832/5_ulrc0z.png",
-    title: "Master your skills",
-    presenter: "Dr. Adarsh Sharma",
-    tags: ["Business", "Finance"],
-},
-{
-    id: 4,
-    image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435832/2_sriage.png",
-    title: "Grow your money",
-    presenter: "Dr. Adarsh Sharma",
-    tags: ["Motivational", "Public Speaking"],
-},
-{
-    id: 5,
-    image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435832/4_hc29vf.png",
-    title: "How to pitch for funds",
-    presenter: "Dr. Adarsh Sharma",
-    tags: ["Design", "Innovation"],
-},
-{
-    id: 6,
-    image: "https://res.cloudinary.com/dhi3iupue/image/upload/v1743435832/3_auca2q.png",
-    title: "What is depriciation?",
-    presenter: "Dr. Adarsh Sharma",
+    image: "/images/",
+    title: "Startup Funding Masterclass",
+    presenter: "Michael Chen",
     tags: ["Business", "Finance"],
 },
 ]
@@ -68,7 +47,7 @@ const goToNext = () => {
 }
 
 return (
-    <div className="min-h-screen bg-white bg-[linear-gradient(#f0f0f0_1px,transparent_1px),linear-gradient(90deg,#f0f0f0_1px,transparent_1px)] bg-[size:80px_80px] flex flex-col items-center px-4 py-8">
+    <div className="min-h-screen bg-[#5C3FFF] bg-[linear-gradient(#a3a098_2px,transparent_1px),linear-gradient(90deg,#a3a098_2px,transparent_1px)] bg-[size:80px_80px] flex flex-col items-center px-4 py-8">
     
 
     {/* Events Heading */}   
@@ -119,11 +98,7 @@ return (
         </div>
         </div>
 
-        <button className="bg-[#f2d638] text-black rounded-full font-bold flex items-center mx-auto hover:bg-yellow-500 transition-colors"
-            onClick={() => {
-            window.open('https://tally.so/r/mDMgyq', '_blank');
-          }}
-        >
+        <button className="bg-[#f2d638] text-black rounded-full font-bold flex items-center mx-auto hover:bg-yellow-500 transition-colors">
         <div className="rounded-full">
             <ChevronRightCircle className="h-8 w-8" />
         </div>

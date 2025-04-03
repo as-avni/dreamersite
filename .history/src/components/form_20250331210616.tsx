@@ -322,7 +322,7 @@ export default function QuickFormSection() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
             >
-              <Link href="/" className="font-bold text-3xl inline-block text-black">
+              <Link href="/valid-route" className="font-bold text-3xl inline-block text-black">
                 Let&apos;s Disrupt It Together ↗
               </Link>
             </motion.div>

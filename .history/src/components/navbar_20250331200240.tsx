@@ -13,10 +13,9 @@ export default function Header() {
         <Link href="/">
         {/* https://res.cloudinary.com/dhi3iupue/image/upload/v1743189394/Younicorn_Logo_h7xo0s.png */}
           <span
-            className="text-3xl font-bold tracking-normal bg-blue-400 p-2 rounded-2xl"
+            className="text-3xl font-extrabold tracking-normal bg-blue-400"
             style={{
               color: "white",
-              textShadow: "1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black",
             }}
           >
             Younicorn.club
@@ -36,7 +35,7 @@ export default function Header() {
       <div
         className={`flex flex-col md:flex-row items-center gap-6 ${
           isOpen ? "block" : "hidden md:flex"
-        } absolute md:static top-16 left-0 w-full md:w-auto bg-white bg-opacity-[70%] md:bg-transparent shadow-md md:shadow-none rounded-xl md:rounded-none p-4 md:p-0`}
+        } absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none rounded-lg md:rounded-none p-4 md:p-0`}
       >
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full md:w-auto space-y-4 md:space-y-0">
           <Link
@@ -45,16 +44,15 @@ export default function Header() {
           >
             Explore Events
           </Link>
+
+          <Link href="/contact">
             <div className="relative group">
               <div className="absolute inset-0 bg-black rounded-full translate-x-1 translate-y-1"></div>
-              <button className="relative bg-white border-2 border-black rounded-full px-6 py-2 font-bold transition-transform group-hover:-translate-x-0.5 group-hover:-translate-y-0.5"
-              onClick={() => {
-                window.open('https://tally.so/r/mDMgyq', '_blank');
-              }}
-            >
+              <button className="relative bg-white border-2 border-black rounded-full px-6 py-2 font-bold transition-transform group-hover:-translate-x-0.5 group-hover:-translate-y-0.5">
                 GET IN TOUCH
               </button>
             </div>
+          </Link>
         </div>
       </div>
     </header>

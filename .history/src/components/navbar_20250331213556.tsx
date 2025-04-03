@@ -45,6 +45,8 @@ export default function Header() {
           >
             Explore Events
           </Link>
+
+          <Link href="/google" target="_blank">
             <div className="relative group">
               <div className="absolute inset-0 bg-black rounded-full translate-x-1 translate-y-1"></div>
               <button className="relative bg-white border-2 border-black rounded-full px-6 py-2 font-bold transition-transform group-hover:-translate-x-0.5 group-hover:-translate-y-0.5"
@@ -55,6 +57,7 @@ export default function Header() {
                 GET IN TOUCH
               </button>
             </div>
+          </Link>
         </div>
       </div>
     </header>

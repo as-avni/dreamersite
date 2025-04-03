@@ -15,7 +15,7 @@ export default function QuickFormSection() {
     linkedin: "",
   }) 
 
-  const [workProfile, setWorkProfile] = useState("") // Added setWorkProfile to update workProfile state
+  const [workProfile] = useState("")
   const [expressYourself, setExpressYourself] = useState("")
   const [isExpressYourselfActive, setIsExpressYourselfActive] = useState(false)
   const [formStep, setFormStep] = useState(0)
@@ -26,10 +26,6 @@ export default function QuickFormSection() {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
-
-  const handleWorkProfileChange = (e: React.ChangeEvent<HTMLInputElement>) => { // Added function to handle work profile change
-    setWorkProfile(e.target.value);
-  };
 
   const handleExpressYourselfChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
@@ -50,13 +46,12 @@ export default function QuickFormSection() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ formData, workProfile, expressYourself }), // Updated to include expressYourself
+        body: JSON.stringify({ formData, workProfile }),
       });
 
       if (response.ok) {
         const data = await response.json();
         setResponseMessage(data.message || "Form submitted successfully!");
-        setFormStep(2); // Move to the next step after successful submission
       } else {
         setResponseMessage("Error submitting form. Please try again.");
       }
@@ -83,7 +78,7 @@ export default function QuickFormSection() {
   }
 
   return (
-    <section id="form" className="py-16 px-10 bg-gray-50 font-newsreader">
+    <section idclassName="py-16 px-10 bg-gray-50 font-newsreader">
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 shadow-xl rounded-sm overflow-hidden">
           <motion.div
@@ -176,24 +171,6 @@ export default function QuickFormSection() {
                       required
                     />
                   </div>
-                </div>
-
-                <div className="group relative mb-6"> {/* Added for work profile */}
-                  <label
-                    htmlFor="workProfile"
-                    className="block text-sm font-medium text-gray-700 mb-1 transition-all group-focus-within:text-[#000000]"
-                  >
-                    Work Profile
-                  </label>
-                  <input
-                    type="text"
-                    id="workProfile"
-                    name="workProfile"
-                    value={workProfile}
-                    onChange={handleWorkProfileChange}
-                    className="w-full p-2 border text-black border-gray-300 focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent outline-none hover:border-black transition-all bg-transparent focus:bg-white"
-                    required
-                  />
                 </div>
 
                 <div className="flex justify-center mt-8">
@@ -322,7 +299,7 @@ export default function QuickFormSection() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
             >
-              <Link href="/" className="font-bold text-3xl inline-block text-black">
+              <Link href="/valid-route" className="font-bold text-3xl inline-block text-black">
                 Let&apos;s Disrupt It Together ↗
               </Link>
             </motion.div>

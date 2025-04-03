@@ -105,7 +105,7 @@ export default function AmazingSection() {
             <motion.div className="flex flex-col items-center space-y-2" variants={itemVariants}>
               
               <div className="bg-[#FFCA28] py-2 px-4 text-center w-64 h-full text-black font-medium hover:bg-[#FFB300] transition-colors cursor-pointer">
-              <Link href="https://tally.so/r/mDMgyq" target="_blank">
+              <Link href="/google" target="_blank">
                 <h1 className="font-bold text-xl text-left">Join us to create great opportunities.</h1>
                 <p className="text-lg text-left">Let’s make the world a better place.</p>
                 <p className="font-bold text-2xl text-left">APPLY TO JOIN →</p>
